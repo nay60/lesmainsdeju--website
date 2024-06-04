@@ -252,11 +252,21 @@
 .next, .prev{
     width: 10vw;
     position: absolute;
+    user-select: none;
   }
 
 .prev{
     margin: 13vw 0 0 5vw;
     z-index: 10;
+    user-select: none;
+  }
+
+.prev:hover{
+    cursor: pointer;
+  }
+
+.next:hover{
+    cursor: pointer;
   }
 
 .next{
@@ -264,3 +274,20 @@
     z-index: 10;
 }
 
+@media screen and (max-width:768px) {
+    .swiper-slide img{
+        width: 90vw;
+        border-radius: 40px 60px 80px 0px;
+        margin: 4vh 0 0 0;
+    }
+
+    .content-button{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 3vh 10vw 0 0;
+    }
+    
+    #nextButton{
+        margin: 0 0 2vh 0;
+    }
+}

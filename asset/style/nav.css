@@ -67,3 +67,30 @@ nav div button:active {
 nav div #contact{
     background-color: #e883c1;
 }
+
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        height: auto;
+        margin: 1vh 0 0 0;
+        justify-content: center;
+    }
+
+    nav img{
+        width: 60vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul{
+        margin: 2vh 0 2vh 0;
+        padding: 0;
+        width: auto;
+    }
+
+    nav ul li{
+        margin: 0;
+        padding: 0;
+    }
+    
+}

@@ -69,3 +69,38 @@
     margin: 0.8vw 0.8vw 0;
     padding: 0;
 }
+
+@media screen and (max-width:768px) {
+    .product-right, .product-left{
+        margin: 0;
+        width: 98vw;
+    }
+
+    .product-left div, .product-right div{
+        flex-direction: column;
+        align-items: center;
+        width: 98vw;
+        margin: 1vh 0 3vh 0;
+    }
+
+    .product-left div img, .product-right div img{
+        width: 90vw;
+    }
+
+    .product-left div div, .product-right div div{
+        margin: 2.5vh 0 0 0;
+        align-items: center;
+    }
+
+    .product-left div div p, .product-right div div p{
+        margin: 0;
+        text-align: center;
+    }
+
+    #services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3vh 0 0 0;
+    }
+}
